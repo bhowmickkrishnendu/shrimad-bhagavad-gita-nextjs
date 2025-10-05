@@ -1,36 +1,52 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Shrimad Bhagavad Gita – Modern Web Project
 
-## Getting Started
+A modern, premium, SEO-ready website for the Shrimad Bhagavad Gita, built with Next.js (App Router, TypeScript, Tailwind CSS). Features a beautiful responsive design, glassmorphism, and multi-language support.
 
-First, run the development server:
+## Features
+- Modern, premium UI inspired by shrimadbhagvadgita.org
+- Responsive header, language cards, and content sections (Dharma, Karma, Moksha, Krishna)
+- SEO meta tags, Open Graph, Twitter Card
+- Static export for cPanel, Vercel, or any static host
+- Ready for deployment to Oracle Linux (Node.js), Vercel, or cPanel
+
+## Getting Started (Development)
 
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
+Visit [http://localhost:3000](http://localhost:3000) to view the site locally.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Static Export (for cPanel, Vercel drag-and-drop, or static hosting)
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+1. **Build and export the static site:**
+   ```bash
+   npm run build
+   ```
+   This will generate an `out/` folder with your static site.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+2. **Deploy:**
+   - **Vercel:**
+     - Recommended: Connect your GitHub repo to Vercel for automatic builds.
+     - For static hosting: Drag and drop the contents of the `out/` folder in the Vercel dashboard.
+   - **cPanel or Shared Hosting:**
+     - Upload the contents of the `out/` folder to your public_html or web root directory.
+   - **Oracle Linux (Node.js):**
+     - You can run as a Node.js app (`npm run build && npm start`) or serve the static `out/` folder with any static server.
 
-## Learn More
+## Project Structure
+- `src/app/page.tsx` – Main homepage and all sections
+- `public/` – Static assets and images
+- `next.config.js` – Next.js config (uses `output: 'export'` for static export)
+- `out/` – Generated static site after build (do not edit manually)
 
-To learn more about Next.js, take a look at the following resources:
+## Customization
+- Edit `src/app/page.tsx` to change content, images, or layout.
+- Update SEO/meta tags in the `<Head>` section of `page.tsx`.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## License
+This project is for educational and personal use. For commercial use, please contact the author.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+---
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+*Built with ❤️ using Next.js, Tailwind CSS, and inspiration from shrimadbhagvad gita.*
