@@ -1,3 +1,7 @@
+# Shrimad Bhagavad Gita – Modern Next.js Website
+
+**A modern, premium, SEO-ready website for the Shrimad Bhagavad Gita. Built with Next.js, featuring beautiful design, responsive layout, and multi-language support.**
+
 # Shrimad Bhagavad Gita – Modern Web Project
 
 A modern, premium, SEO-ready website for the Shrimad Bhagavad Gita, built with Next.js (App Router, TypeScript, Tailwind CSS). Features a beautiful responsive design, glassmorphism, and multi-language support.
