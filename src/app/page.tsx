@@ -25,7 +25,7 @@ export default function Home() {
       </Head>
       <div className="min-h-screen flex flex-col items-center bg-white font-sans">
       {/* Header with Krishna and Arjun image (placeholder) */}
-  <header className="w-full relative h-52 sm:h-80 md:h-[28rem] flex items-end justify-center mb-12">
+  <header className="w-full relative h-52 sm:h-80 md:h-[28rem] flex items-center justify-center mb-8 sm:mb-12">
         {/* Full-width responsive Krishna-Arjun banner image */}
         <Image
           src="/image.jpg"
@@ -37,10 +37,10 @@ export default function Home() {
         />
         {/* Glassmorphism overlay */}
         <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-yellow-900/20 to-yellow-100/10 z-10 animate-gradient-x" />
-  <div className="absolute left-1/2 top-32 -translate-x-1/2 w-[95%] sm:w-3/4 bg-white/30 border border-yellow-300/70 rounded-[2.5rem] shadow-[0_8px_32px_0_rgba(31,38,135,0.18)] backdrop-blur-2xl z-20 flex flex-col items-center justify-center py-8 px-6 ring-2 ring-yellow-200/40 ring-offset-2 ring-offset-yellow-50">
+  <div className="relative w-[95%] sm:w-3/4 bg-white/10 sm:bg-white/30 border border-yellow-300/70 rounded-[2.5rem] shadow-[0_8px_32px_0_rgba(31,38,135,0.18)] backdrop-blur-2xl z-20 flex flex-col items-center justify-center py-4 sm:py-8 px-3 sm:px-6 ring-2 ring-yellow-200/40 ring-offset-2 ring-offset-yellow-50 mt-0 mb-0">
           <div className="absolute -top-8 left-1/2 -translate-x-1/2 w-40 h-16 bg-gradient-to-r from-yellow-200/60 via-orange-200/40 to-yellow-100/0 rounded-full blur-2xl opacity-70 animate-pulse" />
-          <h1 className="text-4xl sm:text-6xl font-extrabold bg-gradient-to-r from-orange-400 via-yellow-500 to-orange-600 bg-clip-text text-transparent drop-shadow-2xl text-center tracking-tight animate-gradient-x">Shrimad Bhagavad Gita</h1>
-          <p className="text-lg sm:text-2xl text-yellow-900/90 text-center max-w-2xl mt-3 font-semibold drop-shadow-lg">A Journey of Self-Discovery and Wisdom</p>
+          <h1 className="text-2xl sm:text-6xl font-extrabold bg-gradient-to-r from-orange-400 via-yellow-500 to-orange-600 bg-clip-text text-transparent drop-shadow-2xl text-center tracking-tight animate-gradient-x">Shrimad Bhagavad Gita</h1>
+          <p className="text-base sm:text-2xl text-yellow-900/90 text-center max-w-2xl mt-2 sm:mt-3 font-semibold drop-shadow-lg">A Journey of Self-Discovery and Wisdom</p>
           <div className="absolute bottom-2 right-8 w-16 h-16 bg-gradient-to-br from-yellow-300/40 to-orange-200/30 rounded-full blur-2xl opacity-60 animate-pulse" />
         </div>
       </header>
@@ -48,7 +48,7 @@ export default function Home() {
   {/* Main content with semi-transparent white background for opacity effect */}
   <div className="w-full flex flex-col items-center bg-white/80 rounded-3xl shadow-xl backdrop-blur-md" style={{zIndex: 10, position: 'relative'}}>
   {/* Language Cards */}
-  <section className="flex flex-col items-center justify-center py-8 w-full">
+  <section className="flex flex-col items-center justify-center py-6 sm:py-8 w-full">
         <span className="text-lg sm:text-xl font-semibold mb-6 text-center tracking-wide uppercase bg-gradient-to-r from-orange-400 via-yellow-500 to-orange-600 bg-clip-text text-transparent drop-shadow-lg">Select a Language to Begin Your Journey…</span>
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 w-full max-w-3xl px-2">
           <a
@@ -110,7 +110,7 @@ export default function Home() {
             </div>
             <div className="flex items-center justify-end">
               <div className="w-40 h-40 sm:w-56 sm:h-56 rounded-full bg-white flex items-center justify-center shadow-lg border-4 border-white overflow-hidden">
-                <Image src="https://shrimadbhagvadgita.org/wp-content/uploads/2025/09/Dharma-01.jpg?auto=format&fit=crop&w=400&q=80" alt="Dharma" width={224} height={224} className="w-full h-full object-cover rounded-full" />
+                <Image src="/Dharma-01.jpg" alt="Dharma" width={224} height={224} className="w-full h-full object-cover rounded-full" />
               </div>
             </div>
           </div>
@@ -128,7 +128,7 @@ export default function Home() {
             </div>
             <div className="flex items-center justify-end">
               <div className="w-40 h-40 sm:w-56 sm:h-56 rounded-full bg-white flex items-center justify-center shadow-lg border-4 border-white overflow-hidden">
-                <Image src="https://shrimadbhagvadgita.org/wp-content/uploads/2025/09/Karma-01.jpg?auto=format&fit=crop&w=400&q=80" alt="Karma" width={224} height={224} className="w-full h-full object-cover rounded-full" />
+                <Image src="/Karma-01.jpg" alt="Karma" width={224} height={224} className="w-full h-full object-cover rounded-full" />
               </div>
             </div>
           </div>
@@ -146,7 +146,7 @@ export default function Home() {
             </div>
             <div className="flex items-center justify-end">
               <div className="w-40 h-40 sm:w-56 sm:h-56 rounded-full bg-white flex items-center justify-center shadow-lg border-4 border-white overflow-hidden">
-                <Image src="https://shrimadbhagvadgita.org/wp-content/uploads/2025/09/Moksha-01.jpg?auto=format&fit=crop&w=400&q=80" alt="Moksha" width={224} height={224} className="w-full h-full object-cover rounded-full" />
+                <Image src="/Moksha-01.jpg" alt="Moksha" width={224} height={224} className="w-full h-full object-cover rounded-full" />
               </div>
             </div>
           </div>
@@ -167,7 +167,7 @@ export default function Home() {
             </div>
             <div className="flex items-center justify-end">
               <div className="w-40 h-40 sm:w-56 sm:h-56 rounded-full bg-white flex items-center justify-center shadow-lg border-4 border-white overflow-hidden">
-                <Image src="https://shrimadbhagvadgita.org/wp-content/uploads/2025/09/Borobhai.jpg?auto=format&fit=crop&w=400&q=80" alt="Shri Krishna: The Ultimate Reality" width={224} height={224} className="w-full h-full object-cover rounded-full" />
+                <Image src="/Borobhai.jpg" alt="Shri Krishna: The Ultimate Reality" width={224} height={224} className="w-full h-full object-cover rounded-full" />
               </div>
             </div>
           </div>
