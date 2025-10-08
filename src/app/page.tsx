@@ -12,12 +12,12 @@ export default function Home() {
   const [progress, setProgress] = useState(0);
 
   useEffect(() => {
-    let start = Date.now();
-    let duration = 3000; // 3 seconds
-  let raf: number | undefined;
+    const start = Date.now();
+    const duration = 3000; // 3 seconds
+    let raf: number | undefined;
     const animate = () => {
-      let elapsed = Date.now() - start;
-      let percent = Math.min(100, Math.round((elapsed / duration) * 100));
+      const elapsed = Date.now() - start;
+      const percent = Math.min(100, Math.round((elapsed / duration) * 100));
       setProgress(percent);
       if (elapsed < duration) {
         raf = requestAnimationFrame(animate);
