@@ -4,6 +4,7 @@ A modern, premium, SEO-ready website for the Shrimad Bhagavad Gita, built with N
 
 ## Features
 - Modern, premium UI inspired by shrimadbhagvadgita.org
+- Beautiful animated loader (3 seconds, Dharma image, progress bar, premium design)
 - Responsive header, language cards, and content sections (Dharma, Karma, Moksha, Krishna)
 - SEO meta tags, Open Graph, Twitter Card
 - Static export for cPanel, Vercel, or any static host
@@ -41,7 +42,7 @@ Visit [http://localhost:3000](http://localhost:3000) to view the site locally.
 - `out/` – Generated static site after build (do not edit manually)
 
 ## Customization
-- Edit `src/app/page.tsx` to change content, images, or layout.
+- Edit `src/app/page.tsx` to change content, images, loader, or layout.
 - Update SEO/meta tags in the `<Head>` section of `page.tsx`.
 
 ## License
@@ -49,4 +50,13 @@ This project is for educational and personal use. For commercial use, please con
 
 ---
 
-*Built with ❤️ using Next.js, Tailwind CSS, and inspiration from shrimadbhagvad gita.*
+---
+
+## Loader Details
+
+- Displays a Dharma image in a circle above the title
+- Shows "Shrimad Bhagavad Gita" and a premium rectangle with "Loading your journey…"
+- Animated progress bar (0–100%) synced to 3 seconds
+- All main content loads after the loader completes
+
+*Built with ❤️ using Next.js, Tailwind CSS, and inspiration from shrimadbhagvadgita.org.*
